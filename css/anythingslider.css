@@ -32,7 +32,6 @@
 }
 /* slider window - top & bottom borders, default state */
 .anythingSlider-default .anythingWindow {
-	border-top: 3px solid #777;
 }
 /* Navigation buttons + start/stop button, default state */
 .anythingSlider-default .anythingControls a {

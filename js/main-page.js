@@ -11,10 +11,18 @@ $(document).ready(function(e) {
 		autoPlayLocked : false,
 		delay : 2500,
 		onSlideComplete: function(slider) {
+<<<<<<< HEAD
 			if (lastClickedBtnNum != -1) {
 				onClick(prevClickedBtn, lastClickedBtnNum);
 				lastClickedBtnNum = -1;
 			} 
+=======
+			busy = false;
+			if (changed) {
+				onClick(whileBusyClicked, lastClickedBtnNum);	
+				changed = false;
+			}
+>>>>>>> origin/gh-pages
 		}
 	});
 	InitControls();      
@@ -22,6 +30,13 @@ $(document).ready(function(e) {
 
 var prevClickedBtn;
 var lastClickedBtnNum = -1;
+<<<<<<< HEAD
+=======
+var busy = false;
+var changed = false;
+
+var whileBusyClicked;
+>>>>>>> origin/gh-pages
 
 function InitControls() {
 	mainPageSlider.anythingSlider(1);
@@ -45,6 +60,7 @@ function GetOnClickFunction(pageNumber) {
 }
 
 function onClick(clicked, pageNumber) {
+<<<<<<< HEAD
 	prevClickedBtn.parent().removeClass("active");
 	prevClickedBtn = clicked;
 	clicked.parent().addClass("active");
@@ -52,3 +68,26 @@ function onClick(clicked, pageNumber) {
 	mainPageSlider.anythingSlider(pageNumber);
 }
 
+=======
+	if (GetId(clicked) == GetId(prevClickedBtn)) {
+			return;
+	}
+	prevClickedBtn.parent().removeClass("active");
+	clicked.parent().addClass("active");
+	lastClickedBtnNum = pageNumber;
+	if (busy) {
+		whileBusyClicked = clicked;
+		changed = true;
+		return;
+	}
+	prevClickedBtn = clicked;
+	busy = true;
+	console.log("click");
+	mainPageSlider.anythingSlider(pageNumber);
+}
+
+function GetId(elem) {
+	return $(elem).attr('id');
+}
+
+>>>>>>> origin/gh-pages

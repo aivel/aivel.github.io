@@ -1,0 +1,25 @@
+body > .navbar .brand {
+  padding-right: 5;
+  padding-left: 0;
+  margin-left: 20px;
+  text-align:center;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+          transition: all .2s linear;
+}
+.navbar .brand:hover {
+  text-decoration: none;
+  color:#66F; 
+}
+
+.slider-main-page {
+	list-style: none;
+	/* Prevent FOUC (see FAQ page) and keep things readable if javascript is disabled */
+	width:100%;
+	height:330px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}

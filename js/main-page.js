@@ -11,18 +11,11 @@ $(document).ready(function(e) {
 		autoPlayLocked : false,
 		delay : 2500,
 		onSlideComplete: function(slider) {
-<<<<<<< HEAD
 			busy = false;
 			if (changed) {
 				onClick(whileBusyClicked, lastClickedBtnNum);	
 				changed = false;
 			}
-=======
-			if (lastClickedBtnNum != -1) {
-				onClick(prevClickedBtn, lastClickedBtnNum);
-				lastClickedBtnNum = -1;
-			} 
->>>>>>> master
 		}
 	});
 	InitControls();      
@@ -30,13 +23,10 @@ $(document).ready(function(e) {
 
 var prevClickedBtn;
 var lastClickedBtnNum = -1;
-<<<<<<< HEAD
 var busy = false;
 var changed = false;
 
 var whileBusyClicked;
-=======
->>>>>>> master
 
 function InitControls() {
 	mainPageSlider.anythingSlider(1);
@@ -60,7 +50,6 @@ function GetOnClickFunction(pageNumber) {
 }
 
 function onClick(clicked, pageNumber) {
-<<<<<<< HEAD
 	if (GetId(clicked) == GetId(prevClickedBtn)) {
 			return;
 	}
@@ -82,12 +71,3 @@ function GetId(elem) {
 	return $(elem).attr('id');
 }
 
-=======
-	prevClickedBtn.parent().removeClass("active");
-	prevClickedBtn = clicked;
-	clicked.parent().addClass("active");
-	lastClickedBtnNum = pageNumber;
-	mainPageSlider.anythingSlider(pageNumber);
-}
-
->>>>>>> master

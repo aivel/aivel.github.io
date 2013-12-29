@@ -5,7 +5,6 @@
     <script src = "js/jquery.anythingslider.js"></script>
     <script src = "js/jquery.anythingslider.fx.js"></script>
     <script src="js/bootstrap.js" type="text/javascript" charset="utf-8" async defer></script>
-    <script src="js/for-students.js" type="text/javascript" charset="utf-8" async defer></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/animate.css" type="text/css" />
     <link rel="stylesheet" href="css/anythingslider.css" type="text/css" />
@@ -28,8 +27,8 @@
         </div>
         <div class="navbar-collapse bs-navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a id = "main-page-btn" href="#">Главная</a></li>
-                <li><a id = "news-page-btn" href="#">Новости</a></li>
+                <li class = "active"><a href="#tab1" data-toggle="tab">Главная</a></li>
+                <li><a href="#tab2" data-toggle="tab">Новости</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">О кафедре<b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -47,7 +46,7 @@
                         <li><a href="#">Форум</a></li>
                     </ul>
                 </li>
-                <li class="dropdown active">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Студентам<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li class="dropdown-header">Файлы</li>
@@ -67,8 +66,8 @@
 	<div class="container">
         <div class="page-header container">
         	<div class = "page-content">
-            	<div class = "slider-main-page">
-                    <div class = "slide">
+            	<div class = "tab-content">
+                    <div class = "tab-pane fade in active" id = "tab1">
                     	<div class = "fluid-container container">
                             <div class="row">
                             	<div class = "col-xs-4">
@@ -94,7 +93,7 @@
                             </div>
                         </div>  
                     </div>
-                    <div class = "slide">
+                    <div class = "tab-pane fade" id="tab2">
                         <h3>ЛЭТИ</h3>
                     </div>
                 </div>

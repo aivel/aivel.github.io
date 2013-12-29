@@ -15,6 +15,10 @@ body > .navbar .brand {
   color:#66F; 
 }
 
+body {
+  padding-top: 40px;
+}
+
 .slider-main-page {
 	list-style: none;
 	/* Prevent FOUC (see FAQ page) and keep things readable if javascript is disabled */

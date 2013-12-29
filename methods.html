@@ -5,22 +5,23 @@
     <script src = "js/jquery.anythingslider.js"></script>
     <script src = "js/jquery.anythingslider.fx.js"></script>
     <script src="js/bootstrap.js" type="text/javascript" charset="utf-8" async defer></script>
-    <script src="js/main-page.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="js/for-students.js" type="text/javascript" charset="utf-8" async defer></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/animate.css" type="text/css" />
     <link rel="stylesheet" href="css/anythingslider.css" type="text/css" />
     <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/methods.css" type="text/css" />
 	<meta charset="utf-8">
  	<title>Сайт кафедры физики СПбГЭТУ "ЛЭТИ" - Главная страница</title>
 </head>
 <body>
 	<header class="navbar navbar-default navbar-fixed-top">
         <div class="navbar-header">
-       		 <a class="navbar-brand brand" href="#">Кафедра физики ЛЭТИ</a>
+       		 <a class="navbar-brand brand" href="index.html">&lt; Главная страница</a>
         </div>
         <div class="container media-list">
             <ul class="nav navbar-nav">
-                <li class="active"><a id = "main-page-btn" href="#">Главная</a></li>
+                <li><a id = "main-page-btn" href="#">Главная</a></li>
                 <li><a id = "news-page-btn" href="#">Новости</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">О кафедре<b class="caret"></b></a>
@@ -39,7 +40,7 @@
                         <li><a href="#">Форум</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
+                <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Студентам<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li class="dropdown-header">Файлы</li>
@@ -55,49 +56,43 @@
             </ul>
         </div>
     </header>
-	<main class="container">
+    
+	<div class="container">
         <div class="page-header container">
-        	<div class="page-content">
-            	<div class="slider-main-page">
-                    <div class="slide">
-                    	<h3>Главная</h3>
-                        <img src="http://physicsleti.narod.ru/etu2.jpg">
+        	<div class = "page-content top-buffer">
+            	<div class = "slider-main-page">
+                    <div class = "slide">
+                    	<div class = "fluid-container container">
+                            <div class="row">
+                            	<div class = "col-xs-4">
+                                    <select class="form-control">
+                                          <option>Механика и термодинамика</option>
+                                          <option>Электрическтво и магнетизм</option>
+                                          <option>Оптика и атомная физика</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row top-buffer">
+                            	<div class = "col-xs-2">
+                                    <select class="form-control">
+                                          <option>ФКТИ</option>
+                                          <option>ФЭЛ</option>
+                                          <option>ФЭА</option>
+                                          <option>ФРТ</option>
+                                    </select>  
+                                </div>  
+                            </div>
+                             <div class="row col-xs-2 top-buffer">
+                             	<button type="button" class="btn btn-primary">Скачать</button>
+                            </div>
+                        </div>  
                     </div>
-                    <div class="slide">
-                        <h3>Новости</h3>
-                        <div class="news-tab">
-                            <div class="news">
-								<b>18.11.13</b>
-                                <a target="_blank" href="">Результаты 1-го тестирования студентов</a>
-                            </div>
-                            <div class="news">
-                                <b>12.12.13</b>
-                                <a target="_blank" href="">Вопросы к экзамену</a>
-                            </div>
-                            <div class="news">
-                                <b>21.12.13</b>
-								<a target="_blank" href="">Результаты 2-го тестирования студентов</a>
-                            </div>
-                        </div>
+                    <div class = "slide">
+                        <h3>ЛЭТИ</h3>
                     </div>
                 </div>
             </div>
     	</div>
-        <div class="post">
-            <h4 class="post-title">Обновился сайт кафедры физики СПбГЭТУ "ЛЭТИ"</h4>
-            <div class="post-subtitle clearfix">
-                <p class="post-subtitle-text pull-left">Наконец-то..</p>
-                <p class="post-date pull-right">29.12.2013</p>
-            </div>
-            <p class="post-content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, maiores, officia tempora natus nesciunt ipsam unde totam similique officiis mollitia laborum aspernatur quasi molestiae esse nulla nobis repudiandae harum! Sunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, rem, sunt minima cum tenetur commodi corporis in assumenda? <br>Dicta, nam ea hic quae molestias aut voluptatum alias dolorem amet rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ipsam, unde, tenetur deleniti cumque ipsum quia labore magnam odio voluptatibus atque maxime nihil rerum perspiciatis accusamus aperiam dolores deserunt illo.
-            </p>
-            <div class="btn-group pull-right">
-  				<a href="#"><button class="post-readall-btn btn-link">Читать далее..</button></a>
-			</div>
-        </div>
-        <br>
-        <hr/>
-    </main>
+    </div>
 </body>
 </html>

@@ -19,7 +19,31 @@ body > .navbar .brand {
 	list-style: none;
 	/* Prevent FOUC (see FAQ page) and keep things readable if javascript is disabled */
 	width:100%;
-	height:330px;
+	height:390px;
 	overflow-y: hidden;
 	overflow-x: hidden;
+}
+
+.post {
+}
+
+.post-content {
+}
+
+.post-title {
+}
+
+.post-subtitle {
+}
+
+.post-date {
+	
+}
+
+.post-subtitle-text {
+	font-style: italic;
+}
+
+.post-readall-btn {
+	margin-top: 10px;
 }

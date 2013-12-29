@@ -23,11 +23,7 @@ body {
 	list-style: none;
 	/* Prevent FOUC (see FAQ page) and keep things readable if javascript is disabled */
 	width:100%;
-<<<<<<< HEAD
-	height:900px;
-=======
 	height:390px;
->>>>>>> origin/gh-pages
 	overflow-y: hidden;
 	overflow-x: hidden;
 }

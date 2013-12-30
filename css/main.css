@@ -15,6 +15,17 @@ body > .navbar .brand {
   color:#66F; 
 }
 
+.navbar-physics {
+  background-color: #ECECEC;
+  border-color: #D1D1D1;
+}
+
+.navbar-physics .navbar-nav > .active > a,
+.navbar-physics .navbar-nav > .active > a:hover,
+.navbar-physics .navbar-nav > .active > a:focus {
+  background-color: #E0E0E0	
+}
+
 body {
   padding-top: 40px;
 }

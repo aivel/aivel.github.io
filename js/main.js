@@ -12,7 +12,7 @@ $(document).ready(function(e) {
 
 	var ref = url.split('/').pop();
 
-	l = $('.navbar ul li a[href="' + ref + tag + '"]').parent().addClass('active');
+	$('.navbar ul li a[href="' + ref + tag + '"]').parent().addClass('active');
 
 	// Change hash for page-reload - НАФИГА ЭТО?:) Но на SO так...
 	$('.navigation-tabs a').on('shown.bs.tab', function (e) {

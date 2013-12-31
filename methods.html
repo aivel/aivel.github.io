@@ -27,78 +27,75 @@
         </div>
         <div class="navbar-collapse bs-navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class = "active"><a href="#tab1" data-toggle="tab">Главная</a></li>
-                <li><a href="#tab2" data-toggle="tab">Новости</a></li>
+                <li><a href="index.html#mainTab">Главная</a></li>
+                <li><a href="index.html#newsTab">Новости</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">О кафедре<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Контакты</a></li>
-                        <li><a href="#">Состав кафедры</a></li>
-                        <li><a href="#">Учебная деятельность</a></li>
-                        <li><a href="#">Лаборатории кафедры</a></li>
-                        <li><a href="#">Научная деятельность</a></li>
+                        <li><a href="contacts.html#contactsTab">Контакты</a></li>
+                        <li><a href="contacts.html#staffTab">Состав кафедры</a></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Учебная деятельность<!-- </a> --></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Лаборатории кафедры<!-- </a> --></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Научная деятельность<!-- </a> --></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Обратная связь<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Гостевая книга</a></li>
-                        <li><a href="#">Форум</a></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Гостевая книга<!-- </a> --></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Форум<!-- </a> --></li>
                     </ul>
                 </li>
-                <li class="dropdown">
+                <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Студентам<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li class="dropdown-header">Файлы</li>
                         <li><a href="methods.html">Методические пособия и задания</a></li>
                         <li class="divider"></li>
                         <li class="dropdown-header">Информация</li>
-                        <li><a href="#">Расписание</a></li>
-                        <li><a href="#">Результаты контроля</a></li>
-                        <li><a href="#">Анимации физических процессов</a></li>
-                        <li><a href="#">Олимпиады по физике</a></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Расписание<!-- </a> --></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Результаты контроля<!-- </a> --></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Анимации физических процессов<!-- </a> --></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Олимпиады по физике<!-- </a> --></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </header>
-    
-	<div class="container">
-        <div class="page-header container">
-        	<div class = "page-content">
-            	<div class = "tab-content">
-                    <div class = "tab-pane fade in active" id = "tab1">
-                    	<div class = "fluid-container container">
-                            <div class="row">
-                            	<div class = "col-xs-10 col-md-4">
-                                    <select class="form-control">
-                                          <option>Механика и термодинамика</option>
-                                          <option>Электрическтво и магнетизм</option>
-                                          <option>Оптика и атомная физика</option>
-                                    </select>
-                                </div>
+	<main class="page-header container">
+    	<div class = "page-content">
+        	<div class = "tab-content">
+                <div class = "tab-pane fade in active" id = "tab1">
+                	<div class = "fluid-container container">
+                        <div class="row">
+                        	<div class = "col-xs-10 col-md-4">
+                                <select class="form-control">
+                                    <option>Механика и термодинамика</option>
+                                    <option>Электрическтво и магнетизм</option>
+                                    <option>Оптика и атомная физика</option>
+                                </select>
                             </div>
-                            <div class="row top-buffer">
-                            	<div class = "col-xs-10 col-md-2">
-                                    <select class="form-control">
-                                          <option>ФКТИ</option>
-                                          <option>ФЭЛ</option>
-                                          <option>ФЭА</option>
-                                          <option>ФРТ</option>
-                                    </select>  
-                                </div>  
+                        </div>
+                        <div class="row top-buffer">
+                        	<div class = "col-xs-10 col-md-2">
+                                <select class="form-control">
+                                    <option>ФКТИ</option>
+                                    <option>ФЭЛ</option>
+                                    <option>ФЭА</option>
+                                    <option>ФРТ</option>
+                                </select>  
                             </div>
-                             <div class="row col-xs-2 top-buffer">
-                             	<button type="button" class="btn btn-primary">Скачать</button>
-                            </div>
-                        </div>  
-                    </div>
-                    <div class = "tab-pane fade" id="tab2">
-                        <h3>ЛЭТИ</h3>
-                    </div>
+                        </div>
+                        <div class="row col-xs-2 top-buffer">
+                            <button type="button" class="btn btn-primary">Скачать</button>
+                        </div>
+                    </div>  
+                </div>
+                <div class = "tab-pane fade" id="tab2">
+                    <h3>ЛЭТИ</h3>
                 </div>
             </div>
-    	</div>
-    </div>
+        </div>
+    </main>
 </body>
 </html>

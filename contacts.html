@@ -25,25 +25,25 @@
             </button>
        		 <a class="navbar-brand brand" href="index.html">Главная страница</a>
         </div>
-        <div class="navbar-collapse bs-navbar-collapse collapse container">
+        <div class="navbar-collapse bs-navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a id = "main-page-btn" href="#">Главная</a></li>
-                <li><a id = "news-page-btn" href="#">Новости</a></li>
-                <li class="dropdown">
+                <li><a href="index.html#mainTab">Главная</a></li>
+                <li><a href="index.html#newsTab">Новости</a></li>
+                <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">О кафедре<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Контакты</a></li>
-                        <li><a href="#">Состав кафедры</a></li>
-                        <li><a href="#">Учебная деятельность</a></li>
-                        <li><a href="#">Лаборатории кафедры</a></li>
-                        <li><a href="#">Научная деятельность</a></li>
+                        <li><a href="#contactsTab" data-toggle="tab">Контакты</a></li>
+                        <li><a href="#staffTab" data-toggle="tab">Состав кафедры</a></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Учебная деятельность<!-- </a> --></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Лаборатории кафедры<!-- </a> --></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Научная деятельность<!-- </a> --></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Обратная связь<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Гостевая книга</a></li>
-                        <li><a href="#">Форум</a></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Гостевая книга<!-- </a> --></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Форум<!-- </a> --></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -53,31 +53,220 @@
                         <li><a href="methods.html">Методические пособия и задания</a></li>
                         <li class="divider"></li>
                         <li class="dropdown-header">Информация</li>
-                        <li><a href="#">Расписание</a></li>
-                        <li><a href="#">Результаты контроля</a></li>
-                        <li><a href="#">Анимации физических процессов</a></li>
-                        <li><a href="#">Олимпиады по физике</a></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Расписание<!-- </a> --></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Результаты контроля<!-- </a> --></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Анимации физических процессов<!-- </a> --></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Олимпиады по физике<!-- </a> --></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </header>
-	<div class="container">
-        <div class="post">
-            <h4 class="post-title">Обновился сайт кафедры физики СПбГЭТУ "ЛЭТИ"</h4>
-            <div class="post-subtitle clearfix">
-                <p class="post-subtitle-text pull-left">Наконец-то..</p>
-                <p class="post-date pull-right">29.12.2013</p>
+	<main class="container page-header">
+		<div class = "page-content">
+        	<div class = "tab-content">
+                <div class = "tab-pane fade in active" id = "contactsTab">
+                	<h3>Контакты</h3>
+                	Адрес: 197376, Санкт-Петербург, Ул. Проф. Попова 5<br/>
+					Тел. (812) 346-29-82<br/>
+					Офицальный E-mail:physics@etu.ru<br/>
+					Вспомогательный E-mail:physicsleti@narod.ru<br/>
+					<br/><br/>
+					<h3>О кафедре</h3>
+					Кафедра физики основана в 1886 году одновременно с открытием Электротехнического института. С 1901 по 1905 год кафедрой руководил изобретатель радио А.С.Попов. В разное время на кафедре физики работали известные российские физики О.Д.Хвольсон, В.В.Скобельцин, М.М.Глаголев, К.А.Барсуков и другие.
+                </div>
+                <div class = "tab-pane fade" id="staffTab">
+                	<h3>Cостав кафедры</h3>
+                	<table min-width="600px" width="100%">
+  						<tr>  
+    						<td><h4>ФИО</h4></td> 
+    						<td><h4>Ученое звание</h4></td> 
+    						<td><h4>Должность</h4></td>
+  						</tr>  
+  						<tr>  
+    						<td>Канарейкин Алексей Дмитриевич</td> 
+    						<td>д.ф.-м.н.</td> 
+    						<td>Зав. кафедрой</td> 
+  						</tr> 
+  						<tr>  
+    						<td>Малышев Михаил Николаевич</td> 
+    						<td>к.ф.-м.н.</td> 
+    						<td>зам. зав. кафедрой по учебной работе</td> 
+  						</tr> 
+  						<tr>  
+    						<td>Богачев Юрий Викторович</td> 
+    						<td>к.т.н.</td> 
+    						<td>зам. зав. кафедрой по научной работе</td>
+  						</tr>
+  						<tr>  
+    						<td>James Erich Butler</td> 
+    						<td>Phd</td> 
+    						<td>професор</td> 
+  						</tr> 
+  						<tr>  
+    						<td>Альтмарк Александр Моисеевич</td> 
+    						<td>к.ф.-м.н.</td> 
+    						<td>доцент</td> 
+  						</tr> 
+  						<tr>  
+    						<td>Батурин Станислав Сергеевич</td> 
+    						<td></td> 
+    						<td>ассистент</td> 
+  						</tr> 
+  						<tr> 
+    						<td>Белоногая Екатерина Сергеевна</td> 
+    						<td></td> 
+    						<td>ассистент</td> 
+  						</tr> 
+  						<tr>  
+    						<td>Вяткин Вадим Михайлович</td> 
+    						<td>к.ф.-м.н.</td>
+    						<td>доцент</td>
+  						</tr> 
+  						<tr>  
+    						<td>Дедык Антонина Ивановна</td> 
+    						<td>к.ф.-м.н.</td> 
+    						<td>доцент</td>
+  						</tr> 
+  						<tr>
+  							<td>Зайцев Юрий Евгеньевич</td> 
+    						<td>к.т.н.</td> 
+    						<td>доцент</td> 
+  						</tr> 
+  						<tr>  
+    						<td>Козлов Дмитрий Михайлович</td> 
+    						<td>к.т.н.</td> 
+    						<td>доцент</td> 
+  						</tr> 
+  						<tr>  
+    						<td>Козлов Михаил Геннадьевич</td> 
+    						<td>д.ф.-м.н.</td> 
+    						<td>профессор</td> 
+  						</tr> 
+  						<tr>  
+    						<td>Коломыцев Борис Михайлович</td>
+    						<td>к.т.н.</td>
+    						<td>доцент</td>
+  						</tr> 
+  						<tr>
+  							<td>Кузьмина Наталья Николаевна</td> 
+    						<td></td> 
+    						<td>ст. преподаватель</td> 
+  						</tr> 
+  						<tr>  
+    						<td>Левшаков Сергей Анатольевич</td> 
+    						<td>д.ф.-м.н.</td> 
+    						<td>профессор</td>
+  						</tr> 
+  						<tr>  
+    						<td>Лоскутников Виктор Серафимович</td> 
+    						<td>к.ф.-м.н.</td> 
+    						<td>доцент</td> 
+  						</tr> 
+  						<tr>
+    						<td>Мазуренко Валентина Сергеевна</td> 
+    						<td></td> 
+    						<td>ст. преподаватель</td> 
+  						</tr> 
+  						<tr>
+    						<td>Мамыкин Александр Иванович</td> 
+    						<td>д.ф.-м.н.</td> 
+    						<td>профессор</div></td> 
+  						</tr> 
+  						<tr>  
+    						<td>Морозов Вениамин Васильевич</td> 
+    						<td>к.ф.-м.н.</div></td> 
+    						<td>доцент</td>
+				  		</tr>
+  						<tr>  
+    						<td>Павлова Юлия Валерьевна</td> 
+    						<td>к.ф.-м.н.</td> 
+    						<td>ассистент</td> 
+  						</tr> 
+  						<tr>  
+    						<td>Павлык Александр Владимирович</td> 
+    						<td>к.ф.-м.н.</td> 
+    						<td>доцент</td> 
+  						</tr> 
+						<tr>
+  							<td>Попов Юрий Игоревич</td> 
+    						<td>к.ф.-м.н.</td> 
+    						<td>доцент</td> 
+  						</tr> 
+  						<tr>  
+    						<td>Посредник Олеся Валерьевна</td> 
+    						<td>к.ф.-м.н.</td> 
+						    <td>доцент</td> 
+  						</tr> 
+  						<tr>  
+    						<td>Сизова Елена Алексеевна</td> 
+    						<td>к.ф.-м.н.</td> 
+    						<td>доцент</td> 
+  						</tr> 
+  						<tr>  
+    						<td>Скоков Сергей Николаевич</td> 
+    						<td></td> 
+    						<td>ст. преподаватель</td>
+  						</tr> 
+  						<tr>
+  							<td>Страхов Николай Борисович</td>
+    						<td>к.ф.-м.н.</td>
+    						<td>доцент</td>
+  						</tr> 
+  						<tr>  
+    						<td>Титов Леонид Алексеевич</td> 
+    						<td>к.ф.-м.н.</td> 
+    						<td>доцент></td> 
+  						</tr> 
+						<tr>  
+						    <td>Харитонский Петр Владимирович</td> 
+						    <td>д.ф.-м.н.</td> 
+						    <td>профессор</td>
+						</tr> 
+						<tr>  
+						    <td>Ходьков Дмитрий Афанасьевич</td> 
+						    <td>к.ф.-м.н.</td> 
+						    <td>доцент</td>
+						</tr> 
+						<tr>
+							<td>Чурганова Серафима Сергеевна</td> 
+						    <td>к.х.н.</td> 
+						    <td>доцент</td> 
+						</tr> 
+						<tr>  
+						    <td>Черемухина Ирина Анатольевна</td> 
+						    <td>к.ф.-м.н.</td> 
+						    <td>доцент</td> 
+						</tr> 
+						<tr>  
+						    <td>Шаталова Александра Борисовна</td> 
+						    <td></td> 
+						    <td>ст. преподаватель</td>
+						</tr> 
+						<tr>  
+						    <td>Шахова Ирина Алексеевна</td> 
+						    <td></td> 
+						    <td>ст. преподаватель</td> 
+						</tr> 
+						<tr>  
+						    <td>Шахов Алексей Алексеевич</td> 
+						    <td>к.т.н.</td> 
+						    <td>доцент</td> 
+						</tr> 
+						<tr>
+						  	<td>Шейнман Илья Львович</td> 
+						    <td>к.ф.-м.н</td> 
+						    <td>доцент</td> 
+						</tr> 
+						<tr>  
+						    <td>Шишкина Марина Николаевна</td>
+						    <td>к.х.н.</td> 
+						    <td>доцент</td> 
+						</tr>
+					</table>
+                </div>
             </div>
-            <p class="post-content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, maiores, officia tempora natus nesciunt ipsam unde totam similique officiis mollitia laborum aspernatur quasi molestiae esse nulla nobis repudiandae harum! Sunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, rem, sunt minima cum tenetur commodi corporis in assumenda? <br>Dicta, nam ea hic quae molestias aut voluptatum alias dolorem amet rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ipsam, unde, tenetur deleniti cumque ipsum quia labore magnam odio voluptatibus atque maxime nihil rerum perspiciatis accusamus aperiam dolores deserunt illo.
-            </p>
-            <div class="btn-group pull-right">
-  				<a href="#"><button class="post-readall-btn btn-link">Читать далее..</button></a>
-			</div>
         </div>
-        <br>
-        <hr/>
-    </div>
+    </main>
 </body>
 </html>

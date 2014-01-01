@@ -19,12 +19,12 @@ $(document).ready(function(e) {
 		window.location.hash = e.target.hash;
 	})   
 	
-	$('.navbar .dropdown').hover(
+/*	$('.navbar .dropdown').hover(
 		function() {
 			$(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
 		}, function() {
 		  $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
 		}
-	);
+	);*/
  
 });

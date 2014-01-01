@@ -15,6 +15,13 @@ body > .navbar .brand {
   color: #000;
 }
 
+/*А тут стили для мобильной версии, ошшень надо, так как бутстрап хочет везде черный цвет по-дефолту*/
+@media (max-width: 767px) {
+	.navbar-default.navbar-physics .navbar-nav .open .dropdown-menu > li > a {
+		color: #ffffff;
+	}
+}
+
 /*Цвет Nav-Bar и бордера*/
 .navbar-default.navbar-physics {
   background-color: #1FAEE9;
@@ -41,7 +48,7 @@ body > .navbar .brand {
 	color: #000;
 }
 
-/*Цвет активног дропдауна*/
+/*Цвет активного дропдауна*/
 .navbar-default.navbar-physics .navbar-nav>.open>a,
 .navbar-default.navbar-physics .navbar-nav>.open>a:hover,
 .navbar-default.navbar-physics .navbar-nav>.open>a:focus {

@@ -37,14 +37,14 @@ body > .navbar .brand {
 .navbar-default.navbar-physics .navbar-nav > .active > a,
 .navbar-default.navbar-physics .navbar-nav > .active > a:hover,
 .navbar-default.navbar-physics .navbar-nav > .active > a:focus {
-  background-color: #3D8CD3;
+  background-color: #4D9DE5;
   color: #000;	
 }
 
 /*Наведение на Nav-Bar*/
 .navbar-default.navbar-physics .navbar-nav>li>a:hover,
 .navbar-default.navbar-physics .navbar-nav>li>a:focus {
- 	background-color: #3D8CD3;
+ 	background-color: #4D9DE5;
 	color: #000;
 }
 
@@ -53,7 +53,7 @@ body > .navbar .brand {
 .navbar-default.navbar-physics .navbar-nav>.open>a:hover,
 .navbar-default.navbar-physics .navbar-nav>.open>a:focus {
   color: #000;
-  background-color: #3D8CD3;	
+  background-color: #4D9DE5;	
 }
 
 body {

@@ -19,6 +19,7 @@ $(document).ready(function(e) {
 	// нужно чтобы менять адрес в адресной строке по открытию таба
 	$('.navigation-tabs a').on('shown.bs.tab', function (e) {
 		window.location.hash = e.target.hash;
+		window.scrollTo(0, 0);
 	})   
 	
 	isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent); 

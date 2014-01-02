@@ -58,6 +58,7 @@ body > .navbar .brand {
 
 body {
   padding-top: 40px;
+  background-image: url(../img/background.jpg);
 }
 
 .slider-main-page {

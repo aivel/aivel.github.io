@@ -1,3 +1,5 @@
+var isMobile = false;
+
 $(document).ready(function(e) {
 	var url = document.location.toString();
 	if (url.match('#')) {
@@ -14,17 +16,21 @@ $(document).ready(function(e) {
 
 	$('.navbar ul li a[href="' + ref + tag + '"]').parent().addClass('active');
 
-	// Change hash for page-reload - НАФИГА ЭТО?:) Но на SO так...
+	// нужно чтобы менять адрес в адресной строке по открытию таба
 	$('.navigation-tabs a').on('shown.bs.tab', function (e) {
 		window.location.hash = e.target.hash;
 	})   
 	
-/*	$('.navbar .dropdown').hover(
-		function() {
-			$(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
-		}, function() {
-		  $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
-		}
-	);*/
+	isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent); 
+	
+	if (!isMobile) {
+		$('.navbar .dropdown').hover(
+			function() {
+				$(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+			}, function() {
+			  $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
+			}
+		);
+	}
  
 });

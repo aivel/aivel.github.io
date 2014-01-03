@@ -1,4 +1,4 @@
-body > .navbar .brand {
+﻿body > .navbar .brand {
   padding-right: 5;
   padding-left: 0;
   margin-left: 20px;
@@ -12,7 +12,19 @@ body > .navbar .brand {
 }
 .navbar .brand:hover {
   text-decoration: none;
-  color: #000;
+  color: #fff;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+}
+
+.dropdown-menu {
+  background-color: #D3EBEB;
+}
+.dropdown-header {
+  background-color: #D3EBEB;
 }
 
 /*А тут стили для мобильной версии, ошшень надо, так как бутстрап хочет везде черный цвет по-дефолту*/
@@ -24,8 +36,13 @@ body > .navbar .brand {
 
 /*Цвет Nav-Bar и бордера*/
 .navbar-default.navbar-physics {
-  background-color: #1FAEE9;
-  border-color: #B8B4B4;
+  background-color: #0E9AE5;
+  border-color: #D3EBEB;
+}
+
+/* Если больше - навбар выпячивает */
+.glyphicon {
+  font-size: 16px;
 }
 
 /*Просто текст цвета Nav-Bar*/
@@ -37,14 +54,14 @@ body > .navbar .brand {
 .navbar-default.navbar-physics .navbar-nav > .active > a,
 .navbar-default.navbar-physics .navbar-nav > .active > a:hover,
 .navbar-default.navbar-physics .navbar-nav > .active > a:focus {
-  background-color: #4D9DE5;
+  background-color: #D3EBEB;
   color: #000;	
 }
 
 /*Наведение на Nav-Bar*/
 .navbar-default.navbar-physics .navbar-nav>li>a:hover,
 .navbar-default.navbar-physics .navbar-nav>li>a:focus {
- 	background-color: #4D9DE5;
+ 	background-color: #D3EBEB;
 	color: #000;
 }
 
@@ -92,4 +109,9 @@ body {
 
 .post-readall-btn {
 	margin-top: 10px;
+}
+
+a:hover > button {
+	background: url(../img/lightning.gif);
+  color: yellow;
 }

@@ -12,19 +12,19 @@
 }
 .navbar .brand:hover {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
-.container {
+.content {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 12px;
 }
 
 .dropdown-menu {
-  background-color: #D3EBEB;
+  background-color: #FFF;
 }
 .dropdown-header {
-  background-color: #D3EBEB;
+  background-color: #FFF;
 }
 
 /*А тут стили для мобильной версии, ошшень надо, так как бутстрап хочет везде черный цвет по-дефолту*/
@@ -70,7 +70,7 @@
 .navbar-default.navbar-physics .navbar-nav>.open>a:hover,
 .navbar-default.navbar-physics .navbar-nav>.open>a:focus {
   color: #000;
-  background-color: #4D9DE5;	
+  background-color: #D3EBEB;
 }
 
 body {

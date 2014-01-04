@@ -113,5 +113,5 @@ body {
 
 a:hover > button {
 	background: url(../img/lightning.gif);
-  color: yellow;
+ 	color: yellow;
 }

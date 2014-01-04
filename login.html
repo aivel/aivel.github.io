@@ -77,7 +77,7 @@
                       </div>
                       <div class="row form-group">
                             <div class = "col-sm-6">
-                            <label for="inputPassword">Password</label>
+                            <label for="inputPassword">Пароль</label>
                             	<input type="password" class="form-control" id="inputPassword" placeholder="Пароль">
                             </div>
                       </div>
@@ -87,7 +87,7 @@
                             </div>
                       </div>
                 </form>
-                <!-- -->
+                <!-- ТЕСТ -->
 				<script>
 					$('form').bind('submit', function(e) {
 					 	 e.preventDefault(); // form will not be submitted
@@ -106,7 +106,8 @@
 							$("#inputPassword").parent().addClass("has-error");	
 						} else {
 							$("#inputLogin").parent().removeClass("has-error");
-							$("#inputPassword").parent().removeClass("has-error");	
+							$("#inputPassword").parent().removeClass("has-error");
+							window.location = "add-news.html"	
 						}
 					});	
                 </script>

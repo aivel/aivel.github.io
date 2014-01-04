@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<script src = "js/jquery.min.js"></script>
+    <script src="js/bootstrap.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src = "js/main.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/anythingslider.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/methods.css" type="text/css" />
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<title>Сайт кафедры физики СПбГЭТУ "ЛЭТИ" - Главная страница</title>
+</head>
+<body>
+	<header class="navbar navbar-default navbar-physics navbar-fixed-top">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Открыть меню</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+       		 <a class="navbar-brand brand" href="index.html"><i class="glyphicon glyphicon-circle-arrow-left"></i>Главная страница</a>
+        </div>
+        <div class="navbar-collapse bs-navbar-collapse collapse">
+            <ul class="nav navbar-nav navigation-tabs">
+                <li><a href="index.html#mainTab">Главная</a></li>
+                <li><a href="index.html#newsTab">Новости</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">О кафедре<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="contacts.html#contactsTab">Контакты</a></li>
+                        <li><a href="contacts.html#staffTab">Состав кафедры</a></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Учебная деятельность<!-- </a> --></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Лаборатории кафедры<!-- </a> --></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Научная деятельность<!-- </a> --></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Обратная связь<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header"><!-- <a href="#"> -->Гостевая книга<!-- </a> --></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Форум<!-- </a> --></li>
+                    </ul>
+                </li>
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Студентам<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Файлы</li>
+                        <li><a href="methods.html">Методические пособия и задания</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Информация</li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Расписание<!-- </a> --></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Результаты контроля<!-- </a> --></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Анимации физических процессов<!-- </a> --></li>
+                        <li class="dropdown-header"><!-- <a href="#"> -->Олимпиады по физике<!-- </a> --></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+	<main class="page-header">
+    	<div class = "page-content container top-buffer">
+        	<div class = "tab-content">
+                <div class = "tab-pane fade in active" id = "tab1">
+                	<div class = "fluid-container">
+                        <div class="row">
+                        	<div class = "col-xs-10 col-md-4">
+                                <select class="form-control">
+                                    <option>Механика и термодинамика</option>
+                                    <option>Электрическтво и магнетизм</option>
+                                    <option>Оптика и атомная физика</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row top-buffer">
+                        	<div class = "col-xs-10 col-md-2">
+                                <select class="form-control">
+                                    <option>ФКТИ</option>
+                                    <option>ФЭЛ</option>
+                                    <option>ФЭА</option>
+                                    <option>ФРТ</option>
+                                </select>  
+                            </div>
+                        </div>
+                        <div class="row col-xs-2 top-buffer">
+                            <button type="button" class="btn btn-primary">Скачать</button>
+                        </div>
+                    </div>  
+                </div>
+                <div class = "tab-pane fade" id="tab2">
+                    <h3>ЛЭТИ</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -69,6 +69,9 @@
     	<div class = "page-content container content top-buffer">
         	<div class = "">
                 <form role="form">
+                	  <div class="text-danger invisible" id="errorMessage">
+           					Неправильный логин/пароль
+                      </div>
                       <div class="row form-group">
                             <div class = "col-sm-6">
                             <label for="inputLogin">Логин</label>
@@ -104,9 +107,11 @@
 						if (!logSuccess) {
 							$("#inputLogin").parent().addClass("has-error");
 							$("#inputPassword").parent().addClass("has-error");	
+							$("#errorMessage").removeClass("invisible");
 						} else {
 							$("#inputLogin").parent().removeClass("has-error");
 							$("#inputPassword").parent().removeClass("has-error");
+							$("#errorMessage").addClass("invisible");
 							window.location = "add-news.html"	
 						}
 					});	

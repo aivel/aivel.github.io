@@ -21,10 +21,10 @@
 }
 
 .dropdown-menu {
-  background-color: #FFF;
+  border-color: #D3EBEB;
 }
 .dropdown-header {
-  background-color: #FFF;
+  border-color: #D3EBEB;
 }
 
 /*А тут стили для мобильной версии, ошшень надо, так как бутстрап хочет везде черный цвет по-дефолту*/
